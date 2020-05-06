@@ -1,13 +1,38 @@
 import React from "react";
-import SymbolList from "../entity/SymbolList"
+import SymbolList from "./SymbolList"
+import SearchField from "./SearchField";
+import axios from "axios";
+
+const TRENDING_SYMBOL_URL = "http://localhost:8080/exchange/trending-stock-candles?count=10&days=10";
+
+
 export default class Body extends React.Component {
 
+    constructor(props) {
+        super(props);
+        this.state = {
+            symbols: []
+        }
+        this.setSymbols = this.setSymbols.bind(this)
+    }
+
+    componentDidMount() {
+        axios.get(TRENDING_SYMBOL_URL)
+            .then((response) => this.setSymbols(response.data)
+                , (error) => alert(error));
+    }
+
+    setSymbols(symbols) {
+        this.setState({symbols: symbols})
+        alert("Updating symbols with "+symbols)
+    }
 
     render() {
         return (
             <div className="body">
-                <SymbolList />
+                <SearchField updateSymbols={this.setSymbols}/>
+                <SymbolList symbols={this.state.symbols}/>
             </div>
-        );
+        )
     }
 }
