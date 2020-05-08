@@ -1,39 +1,51 @@
 import React from "react";
+import axios from "axios";
+
+const SEARCH_SYMBOL_URL = "http://localhost:8080/exchange/stock-candles";
+
 
 class SearchField extends React.Component {
 
     constructor(props) {
         super(props);
         this.state = {
-            searchValue: "enter symbol name..."
-        }
-        this.handleChange = this.handleChange.bind(this)
+            symbol: "enter symbol name..."
+        };
+        this.handleChange = this.handleChange.bind(this);
+        this.submitSearch = this.submitSearch.bind(this);
+        this.createUrlParams = this.createUrlParams.bind(this);
     }
 
 
     handleChange(event) {
-        const value = event.target.value
+        const value = event.target.value;
         this.setState({
-            searchValue : value
+            symbol: value
         })
     }
 
-    submitSearch(){
-        this.props.updateSymbols(this.state.searchValue)
+    submitSearch() {
+        console.log(axios.get(SEARCH_SYMBOL_URL, {params: this.createUrlParams()})
+            .then((response) => this.props.updateSymbols(response.data)
+                , (error) => console.log(error)))
+    }
+
+    createUrlParams() {
+        const params = new URLSearchParams();
+        params.append("days", "10");
+        params.append("symbol", this.state.symbol)
+        return params
     }
 
     render() {
-        const {searchValue} = this.state
-
+        const {searchValue} = this.state;
         return (
-            <form onSubmit={this.submitSearch}>
+            <div>
                 <label>Symbol : </label>
-                <input type="text" name="symbolName" value={searchValue} onChange={this.handleChange}/>
-                <input type="submit" value="Submit" />
-            </form>)
+                <input type="text" name="symbol" value={searchValue} onChange={this.handleChange}/>
+                <button onClick={this.submitSearch}>Search</button>
+            </div>)
     }
-
 }
-
 
 export default SearchField

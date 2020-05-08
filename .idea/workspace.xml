@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="830cd3e3-9dc7-46a6-8717-854a9af76e5d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/body/SearchField.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/body/Body.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/body/Body.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entity/Symbol.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/Symbol.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entity/SymbolList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/body/SymbolList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/body/SearchField.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/body/SearchField.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,6 +85,18 @@
       <method v="2" />
     </configuration>
   </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -102,11 +112,12 @@
       <workItem from="1588456548801" duration="3462000" />
       <workItem from="1588606072429" duration="2521000" />
       <workItem from="1588616246086" duration="3577000" />
+      <workItem from="1588800231553" duration="4432000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1010" y="466" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1588530134478">
@@ -117,29 +128,37 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="495" y="132" key="#npm_start/0.0.1536.864@0.0.1536.864" timestamp="1588449610450" />
-    <state width="2517" height="413" key="GridCell.Tab.0.bottom" timestamp="1588629539329">
-      <screen x="0" y="0" width="2560" height="1440" />
+    <state width="1493" height="211" key="GridCell.Tab.0.bottom" timestamp="1588878318168">
+      <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="223" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1588464921317" />
+    <state width="1493" height="211" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1588878318168" />
     <state width="2517" height="413" key="GridCell.Tab.0.bottom/0.0.2560.1440@0.0.2560.1440" timestamp="1588629539329" />
-    <state width="2517" height="413" key="GridCell.Tab.0.center" timestamp="1588629539329">
-      <screen x="0" y="0" width="2560" height="1440" />
+    <state width="1493" height="211" key="GridCell.Tab.0.center" timestamp="1588878318167">
+      <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="223" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1588464921317" />
+    <state width="1493" height="211" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1588878318167" />
     <state width="2517" height="413" key="GridCell.Tab.0.center/0.0.2560.1440@0.0.2560.1440" timestamp="1588629539329" />
-    <state width="2517" height="413" key="GridCell.Tab.0.left" timestamp="1588629539329">
-      <screen x="0" y="0" width="2560" height="1440" />
+    <state width="1493" height="211" key="GridCell.Tab.0.left" timestamp="1588878318167">
+      <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="223" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1588464921316" />
+    <state width="1493" height="211" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1588878318167" />
     <state width="2517" height="413" key="GridCell.Tab.0.left/0.0.2560.1440@0.0.2560.1440" timestamp="1588629539329" />
-    <state width="2517" height="413" key="GridCell.Tab.0.right" timestamp="1588629539329">
-      <screen x="0" y="0" width="2560" height="1440" />
+    <state width="1493" height="211" key="GridCell.Tab.0.right" timestamp="1588878318167">
+      <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state width="1493" height="223" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1588464921317" />
+    <state width="1493" height="211" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1588878318167" />
     <state width="2517" height="413" key="GridCell.Tab.0.right/0.0.2560.1440@0.0.2560.1440" timestamp="1588629539329" />
     <state x="976" y="457" width="607" height="526" key="find.popup" timestamp="1587301344659">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state x="976" y="457" width="607" height="526" key="find.popup/0.0.2560.1440@0.0.2560.1440" timestamp="1587301344659" />
+    <state x="361" y="92" key="scopes" timestamp="1588878343056">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="361" y="92" key="scopes/0.0.1536.864@0.0.1536.864" timestamp="1588878343056" />
+    <state x="431" y="181" width="672" height="678" key="search.everywhere.popup" timestamp="1588875053266">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="431" y="181" width="672" height="678" key="search.everywhere.popup/0.0.1536.864@0.0.1536.864" timestamp="1588875053266" />
   </component>
 </project>

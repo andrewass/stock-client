@@ -5,14 +5,13 @@ import axios from "axios";
 
 const TRENDING_SYMBOL_URL = "http://localhost:8080/exchange/trending-stock-candles?count=10&days=10";
 
-
-export default class Body extends React.Component {
+class Body extends React.Component {
 
     constructor(props) {
         super(props);
         this.state = {
             symbols: []
-        }
+        };
         this.setSymbols = this.setSymbols.bind(this)
     }
 
@@ -24,7 +23,6 @@ export default class Body extends React.Component {
 
     setSymbols(symbols) {
         this.setState({symbols: symbols})
-        alert("Updating symbols with "+symbols)
     }
 
     render() {
@@ -36,3 +34,5 @@ export default class Body extends React.Component {
         )
     }
 }
+
+export default Body
