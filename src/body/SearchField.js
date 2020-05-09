@@ -3,7 +3,6 @@ import axios from "axios";
 
 const SEARCH_SYMBOL_URL = "http://localhost:8080/exchange/stock-candles";
 
-
 class SearchField extends React.Component {
 
     constructor(props) {
@@ -11,17 +10,8 @@ class SearchField extends React.Component {
         this.state = {
             symbol: "enter symbol name..."
         };
-        this.handleChange = this.handleChange.bind(this);
         this.submitSearch = this.submitSearch.bind(this);
         this.createUrlParams = this.createUrlParams.bind(this);
-    }
-
-
-    handleChange(event) {
-        const value = event.target.value;
-        this.setState({
-            symbol: value
-        })
     }
 
     submitSearch() {
@@ -33,7 +23,7 @@ class SearchField extends React.Component {
     createUrlParams() {
         const params = new URLSearchParams();
         params.append("days", "10");
-        params.append("symbol", this.state.symbol)
+        params.append("symbol", this.state.symbol);
         return params
     }
 
@@ -42,7 +32,9 @@ class SearchField extends React.Component {
         return (
             <div>
                 <label>Symbol : </label>
-                <input type="text" name="symbol" value={searchValue} onChange={this.handleChange}/>
+                <input type="text" name="symbol" value={searchValue}
+                       onChange={(event) =>
+                           this.setState({symbol: event.target.value})}/>
                 <button onClick={this.submitSearch}>Search</button>
             </div>)
     }

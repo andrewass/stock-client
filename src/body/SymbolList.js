@@ -4,14 +4,15 @@ import Symbol from "../entity/Symbol";
 
 const SymbolList = (props) => {
 
-    const {symbols} = props
+    const {symbols} = props;
+
+    const symbolList = symbols.map((symbol) => {
+        return (<Symbol candles={symbol.candles} symbol={symbol.symbol}/>)
+    });
 
     return (
-        <div className="symbolList">
-            {symbols.map((symbol) =>
-                <Symbol candles={symbol.candles} symbol={symbol.symbol}/>)}
-        </div>
+        <div>{symbolList}</div>
     )
-}
+};
 
-export default SymbolList
+export default SymbolList;
