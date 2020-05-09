@@ -32,7 +32,7 @@ class SearchField extends React.Component {
 
     createUrlParams() {
         const params = new URLSearchParams();
-        params.append("days", "10");
+        params.append("days", "365");
         params.append("symbol", this.state.symbol)
         return params
     }

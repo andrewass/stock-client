@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="830cd3e3-9dc7-46a6-8717-854a9af76e5d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/body/test/Symbol.test.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/body/Body.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/body/Body.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/body/SearchField.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/body/SearchField.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/body/SymbolList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/body/SymbolList.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entity/Symbol.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,6 +68,9 @@
     <selection>jr</selection>
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\andreas\Documents\stock-client\src\body" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\andreas\Documents\stock-client\src\body" />
     </key>
@@ -84,18 +90,6 @@
       <envs />
       <method v="2" />
     </configuration>
-  </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -128,26 +122,30 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="495" y="132" key="#npm_start/0.0.1536.864@0.0.1536.864" timestamp="1588449610450" />
-    <state width="1493" height="211" key="GridCell.Tab.0.bottom" timestamp="1588878318168">
-      <screen x="0" y="0" width="1536" height="864" />
+    <state width="2517" height="413" key="GridCell.Tab.0.bottom" timestamp="1589051269819">
+      <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state width="1493" height="211" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1588878318168" />
-    <state width="2517" height="413" key="GridCell.Tab.0.bottom/0.0.2560.1440@0.0.2560.1440" timestamp="1588629539329" />
-    <state width="1493" height="211" key="GridCell.Tab.0.center" timestamp="1588878318167">
-      <screen x="0" y="0" width="1536" height="864" />
+    <state width="2517" height="413" key="GridCell.Tab.0.bottom/0.0.2560.1440@0.0.2560.1440" timestamp="1589051269819" />
+    <state width="2517" height="413" key="GridCell.Tab.0.center" timestamp="1589051269819">
+      <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state width="1493" height="211" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1588878318167" />
-    <state width="2517" height="413" key="GridCell.Tab.0.center/0.0.2560.1440@0.0.2560.1440" timestamp="1588629539329" />
-    <state width="1493" height="211" key="GridCell.Tab.0.left" timestamp="1588878318167">
-      <screen x="0" y="0" width="1536" height="864" />
+    <state width="2517" height="413" key="GridCell.Tab.0.center/0.0.2560.1440@0.0.2560.1440" timestamp="1589051269819" />
+    <state width="2517" height="413" key="GridCell.Tab.0.left" timestamp="1589051269819">
+      <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state width="1493" height="211" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1588878318167" />
-    <state width="2517" height="413" key="GridCell.Tab.0.left/0.0.2560.1440@0.0.2560.1440" timestamp="1588629539329" />
-    <state width="1493" height="211" key="GridCell.Tab.0.right" timestamp="1588878318167">
-      <screen x="0" y="0" width="1536" height="864" />
+    <state width="2517" height="413" key="GridCell.Tab.0.left/0.0.2560.1440@0.0.2560.1440" timestamp="1589051269819" />
+    <state width="2517" height="413" key="GridCell.Tab.0.right" timestamp="1589051269819">
+      <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state width="1493" height="211" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1588878318167" />
-    <state width="2517" height="413" key="GridCell.Tab.0.right/0.0.2560.1440@0.0.2560.1440" timestamp="1588629539329" />
+    <state width="2517" height="413" key="GridCell.Tab.0.right/0.0.2560.1440@0.0.2560.1440" timestamp="1589051269819" />
+    <state x="1052" y="422" key="RollbackChangesDialog" timestamp="1589035126622">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state x="1052" y="422" key="RollbackChangesDialog/0.0.2560.1440@0.0.2560.1440" timestamp="1589035126622" />
     <state x="976" y="457" width="607" height="526" key="find.popup" timestamp="1587301344659">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
@@ -160,5 +158,17 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="431" y="181" width="672" height="678" key="search.everywhere.popup/0.0.1536.864@0.0.1536.864" timestamp="1588875053266" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/body/test/Symbol.test.js</url>
+          <line>30</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

@@ -1,10 +1,7 @@
 import React from "react";
-import Symbol from "../entity/Symbol";
+import Symbol from "./Symbol";
 
-
-const SymbolList = (props) => {
-
-    const {symbols} = props
+const SymbolList = ({symbols}) => {
 
     return (
         <div className="symbolList">
