@@ -2,6 +2,7 @@ import React from "react";
 import axios from "axios";
 
 const SEARCH_SYMBOL_URL = "http://localhost:8080/exchange/stock-candles";
+const YEAR_5 = (5*365).toString();
 
 class SearchField extends React.Component {
 
@@ -22,7 +23,7 @@ class SearchField extends React.Component {
 
     createUrlParams() {
         const params = new URLSearchParams();
-        params.append("days", "365");
+        params.append("days", YEAR_5);
         params.append("symbol", this.state.symbol)
         return params
     }
