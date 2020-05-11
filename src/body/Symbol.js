@@ -1,36 +1,26 @@
 import React from "react";
+import "../body/style/body.css";
 
-const WEEK = 7;
-const MONTH = 30;
-const YEAR = 365;
-const YEAR_5 = 5*YEAR;
-
-const getPriceChange = (daysAgo, currentPrice, candles) => {
-    let lastCandle = candles.length-1;
-    let timeMap = new Map();
-    timeMap.set(WEEK, "week");
-    timeMap.set(MONTH, "month");
-    timeMap.set(YEAR, "year");
-    timeMap.set(YEAR_5, "5 years");
-
-    let prevClosingPrice = candles[Math.min(lastCandle,daysAgo)].closingPrice
-
-    return (
-        <p>Change since last {timeMap.get(daysAgo)} : {}</p>
-    )
-};
+const priceDifference = (currentPrice, previousPrice) => {
+    let priceDiff = (currentPrice - previousPrice).toFixed(2);
+    if(priceDiff < 0.00){
+        return <label className="negativePrice">{priceDiff}</label>
+    } else {
+        return <label className="positivePrice">+{priceDiff}</label>
+    }
+}
 
 const Symbol = ({symbol, candles}) => {
     let exchange = symbol.exchange;
-
+    let lastCandle = candles.length-1;
+    let currentPrice = candles[0].closingPrice;
+    let previousPrice = candles[lastCandle].closingPrice
     return (
         <div>
-            <h2><b>{symbol.description}</b></h2>
+            <h2><b>{symbol.description} ({symbol.symbol})</b></h2>
+            <h4><b>{exchange.exchangeName} ({exchange.code})</b></h4>
             <p>Latest price : {candles[0].closingPrice} {exchange.currency}</p>
-            {getPriceChange(WEEK, candles[0].closingPrice, candles)}
-            {getPriceChange(MONTH, candles[0].closingPrice, candles)}
-            {getPriceChange(YEAR, candles[0].closingPrice, candles)}
-            {getPriceChange(YEAR_5, candles[0].closingPrice, candles)}
+            <p>Change since last week : {priceDifference(currentPrice, previousPrice)}</p>
         </div>)
 };
 

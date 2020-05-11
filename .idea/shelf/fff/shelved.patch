@@ -1,0 +1,39 @@
+Index: src/body/Symbol.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import React from \"react\";\r\n\r\nconst getPriceChange = (daysAgo, currentPrice, candles) => {\r\n    let timeMap = new Map()\r\n    timeMap.set(7, \"week\")\r\n    timeMap.set(30, \"month\")\r\n    timeMap.set(365, \"year\")\r\n\r\n    return(\r\n        <p>Change in 1 {timeMap.get(daysAgo) }</p>\r\n    )\r\n}\r\n\r\nconst Symbol = ({symbol, candles} ) => {\r\n    let exchange = symbol.exchange\r\n\r\n    return (\r\n        <div>\r\n            <h2><b>{symbol.description}</b></h2>\r\n            <p>Latest price : {candles[0].closingPrice} {exchange.currency}</p>\r\n            {getPriceChange(7, candles[0].closingPrice, candles)}\r\n            {getPriceChange(30, candles[0].closingPrice, candles)}\r\n            {getPriceChange(365, candles[0].closingPrice, candles)}\r\n        </div>)\r\n};\r\n\r\nexport default Symbol
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/body/Symbol.js	(revision 0ba4b8017dad5c11516e4310522c5abeb030e8d8)
++++ src/body/Symbol.js	(date 1589112472568)
+@@ -1,6 +1,15 @@
+ import React from "react";
+ 
+-const getPriceChange = (daysAgo, currentPrice, candles) => {
++const priceChange = (currentPrice, previousPrice) => {
++    let priceDiff = currentPrice - previousPrice;
++    if(priceDiff < 0.00){
++        return <label>{priceDiff}</label>
++    } else {
++        return <label>+{priceDiff}</label>
++    }
++}
++
++const changeInPrice = (daysAgo, currentPrice, candles) => {
+     let timeMap = new Map()
+     timeMap.set(7, "week")
+     timeMap.set(30, "month")
+@@ -18,9 +27,9 @@
+         <div>
+             <h2><b>{symbol.description}</b></h2>
+             <p>Latest price : {candles[0].closingPrice} {exchange.currency}</p>
+-            {getPriceChange(7, candles[0].closingPrice, candles)}
+-            {getPriceChange(30, candles[0].closingPrice, candles)}
+-            {getPriceChange(365, candles[0].closingPrice, candles)}
++            {changeInPrice(7, candles[0].closingPrice, candles)}
++            {changeInPrice(30, candles[0].closingPrice, candles)}
++            {changeInPrice(365, candles[0].closingPrice, candles)}
+         </div>)
+ };
+ 
