@@ -34,8 +34,7 @@ class SearchField extends React.Component {
             <div>
                 <label>Symbol : </label>
                 <input type="text" name="symbol" value={searchValue}
-                       onChange={(event) =>
-                           this.setState({symbol: event.target.value})}/>
+                       onChange={(event) => this.setState({symbol: event.target.value})}/>
                 <button onClick={this.submitSearch}>Search</button>
             </div>);
     }
