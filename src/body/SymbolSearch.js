@@ -1,10 +1,10 @@
 import React from "react";
 import axios from "axios";
 
-const SEARCH_SYMBOL_URL = "http://localhost:8080/exchange/stock-candles";
+const SEARCH_SYMBOL_URL = "http://localhost:8080/common/stock-candles";
 const WEEK = 7;
 
-class SearchField extends React.Component {
+class SymbolSearch extends React.Component {
 
     constructor(props) {
         super(props);
@@ -18,7 +18,7 @@ class SearchField extends React.Component {
     submitSearch() {
         console.log(axios.get(SEARCH_SYMBOL_URL, {params: this.createUrlParams()})
             .then((response) => this.props.updateSymbols(response.data)
-                , (error) => console.log(error)))
+                , (error) => console.log(error)));
     }
 
     createUrlParams() {
@@ -40,4 +40,4 @@ class SearchField extends React.Component {
     }
 }
 
-export default SearchField;
+export default SymbolSearch;

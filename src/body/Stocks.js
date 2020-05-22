@@ -1,9 +1,9 @@
 import React from "react";
 import axios from "axios";
 import SymbolList from "./SymbolList";
-import SearchField from "./SearchField";
+import SymbolSearch from "./SymbolSearch";
 
-const TRENDING_STOCK_SYMBOL_URL = "http://localhost:8080/exchange/trending-stock-candles?count=10&days=365";
+const TRENDING_STOCK_SYMBOL_URL = "http://localhost:8080/stock/trending-stock-candles?count=10&days=365";
 
 class Stocks extends React.Component {
 
@@ -12,7 +12,7 @@ class Stocks extends React.Component {
         this.state = {
             symbols: []
         };
-        this.setSymbols = this.setSymbols.bind(this)
+        this.setSymbols = this.setSymbols.bind(this);
     }
 
     componentDidMount() {
@@ -22,13 +22,13 @@ class Stocks extends React.Component {
     }
 
     setSymbols(symbols) {
-        this.setState({symbols: symbols})
+        this.setState({symbols: symbols});
     }
 
     render() {
         return (
             <div className="stocks">
-                <SearchField updateSymbols={this.setSymbols}/>
+                <SymbolSearch updateSymbols={this.setSymbols}/>
                 <SymbolList symbols={this.state.symbols}/>
             </div>
         );

@@ -3,11 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="830cd3e3-9dc7-46a6-8717-854a9af76e5d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/body/Crypto.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/body/Crypto.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/body/SearchField.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/body/SearchField.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/body/SearchField.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/body/SymbolSearch.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/body/Stocks.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/body/Stocks.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/body/Symbol.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/body/Symbol.js" afterDir="false" />
     </list>
-    <list id="5a0433c2-9ebc-4e62-9281-55ec60d2aa70" name="fff" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -64,6 +66,7 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RebelAgentSelection">
     <selection>jr</selection>
@@ -117,6 +120,13 @@
       <workItem from="1589388601149" duration="816000" />
       <workItem from="1589630156654" duration="1855000" />
       <workItem from="1589643341605" duration="5853000" />
+      <workItem from="1589728882429" duration="2692000" />
+      <workItem from="1589919990571" duration="2379000" />
+      <workItem from="1590003683942" duration="1974000" />
+      <workItem from="1590050720580" duration="1903000" />
+      <workItem from="1590140061755" duration="2766000" />
+      <workItem from="1590146132810" duration="14000" />
+      <workItem from="1590149379673" duration="5609000" />
     </task>
     <servers />
   </component>
@@ -136,26 +146,26 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="495" y="132" key="#npm_start/0.0.1536.864@0.0.1536.864" timestamp="1588449610450" />
-    <state width="2172" height="410" key="GridCell.Tab.0.bottom" timestamp="1589654149264">
+    <state width="2172" height="410" key="GridCell.Tab.0.bottom" timestamp="1590161269806">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state width="1493" height="211" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1589067669302" />
-    <state width="2172" height="410" key="GridCell.Tab.0.bottom/0.0.2560.1440@0.0.2560.1440" timestamp="1589654149264" />
-    <state width="2172" height="410" key="GridCell.Tab.0.center" timestamp="1589654149263">
+    <state width="2172" height="410" key="GridCell.Tab.0.bottom/0.0.2560.1440@0.0.2560.1440" timestamp="1590161269806" />
+    <state width="2172" height="410" key="GridCell.Tab.0.center" timestamp="1590161269805">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state width="1493" height="211" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1589067669301" />
-    <state width="2172" height="410" key="GridCell.Tab.0.center/0.0.2560.1440@0.0.2560.1440" timestamp="1589654149263" />
-    <state width="2172" height="410" key="GridCell.Tab.0.left" timestamp="1589654149263">
+    <state width="2172" height="410" key="GridCell.Tab.0.center/0.0.2560.1440@0.0.2560.1440" timestamp="1590161269805" />
+    <state width="2172" height="410" key="GridCell.Tab.0.left" timestamp="1590161269805">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state width="1493" height="211" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1589067669301" />
-    <state width="2172" height="410" key="GridCell.Tab.0.left/0.0.2560.1440@0.0.2560.1440" timestamp="1589654149263" />
-    <state width="2172" height="410" key="GridCell.Tab.0.right" timestamp="1589654149263">
+    <state width="2172" height="410" key="GridCell.Tab.0.left/0.0.2560.1440@0.0.2560.1440" timestamp="1590161269805" />
+    <state width="2172" height="410" key="GridCell.Tab.0.right" timestamp="1590161269805">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state width="1493" height="211" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1589067669301" />
-    <state width="2172" height="410" key="GridCell.Tab.0.right/0.0.2560.1440@0.0.2560.1440" timestamp="1589654149263" />
+    <state width="2172" height="410" key="GridCell.Tab.0.right/0.0.2560.1440@0.0.2560.1440" timestamp="1590161269805" />
     <state x="248" y="126" key="MergeDialog" timestamp="1589112617752">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
@@ -164,6 +174,10 @@
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state x="1052" y="422" key="RollbackChangesDialog/0.0.2560.1440@0.0.2560.1440" timestamp="1589035126622" />
+    <state x="617" y="365" key="SettingsEditor" timestamp="1590159873538">
+      <screen x="0" y="0" width="2560" height="1440" />
+    </state>
+    <state x="617" y="365" key="SettingsEditor/0.0.2560.1440@0.0.2560.1440" timestamp="1590159873538" />
     <state x="897" y="421" key="VCS.ChangeListViewerDialog" timestamp="1589145271320">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>

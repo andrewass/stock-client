@@ -1,6 +1,6 @@
 import React from "react";
 import axios from "axios";
-import SearchField from "./SearchField";
+import SymbolSearch from "./SymbolSearch";
 import SymbolList from "./SymbolList";
 
 const TRENDING_CRYPTO_SYMBOL_URL = "http://localhost:8080/crypto/trending-crypto-candles?count=10&days=365";
@@ -30,7 +30,7 @@ class Crypto extends React.Component {
     render() {
         return (
             <div className="crypto">
-                <SearchField updateSymbols={this.setSymbols}/>
+                <SymbolSearch updateSymbols={this.setSymbols}/>
                 <SymbolList symbols={this.state.symbols}/>
             </div>
         );
