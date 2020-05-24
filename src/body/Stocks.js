@@ -18,7 +18,7 @@ class Stocks extends React.Component {
     componentDidMount() {
         axios.get(TRENDING_STOCK_SYMBOL_URL)
             .then((response) => this.setSymbols(response.data)
-                , (error) => alert(error));
+                , (error) => console.log(error));
     }
 
     setSymbols(symbols) {

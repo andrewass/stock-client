@@ -1,5 +1,4 @@
 import React from "react";
-import "../body/style/body.css";
 import styled from "styled-components";
 
 const PriceChange = styled.label`
@@ -7,6 +6,8 @@ const PriceChange = styled.label`
 `;
 
 const SymbolBlock = styled.div`
+  width: 60%;
+  margin: 2% 20%;
 `;
 
 const priceDifference = (currentPrice, previousPrice) => {

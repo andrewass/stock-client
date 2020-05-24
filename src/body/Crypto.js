@@ -20,7 +20,7 @@ class Crypto extends React.Component {
         console.log("crypto did mount");
         axios.get(TRENDING_CRYPTO_SYMBOL_URL)
             .then((response) => this.setSymbols(response.data)
-                , (error) => alert(error));
+                , (error) => console.log(error));
     }
 
     setSymbols(symbols) {
