@@ -2,19 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="830cd3e3-9dc7-46a6-8717-854a9af76e5d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/fff.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/fff/shelved.patch" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/body/Body.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/body/Body.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/body/Crypto.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/body/Crypto.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/body/Navigation.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/body/Navigation.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/body/Stocks.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/body/Stocks.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/body/Symbol.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/body/Symbol.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/body/SymbolSearch.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/body/SymbolSearch.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/body/style/body.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,18 +97,6 @@
       <method v="2" />
     </configuration>
   </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
-  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -170,26 +151,26 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="495" y="132" key="#npm_start/0.0.1536.864@0.0.1536.864" timestamp="1588449610450" />
-    <state width="1493" height="211" key="GridCell.Tab.0.bottom" timestamp="1590324867471">
-      <screen x="0" y="0" width="1536" height="864" />
+    <state width="2172" height="410" key="GridCell.Tab.0.bottom" timestamp="1590350152930">
+      <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state width="1493" height="211" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1590324867471" />
-    <state width="2172" height="410" key="GridCell.Tab.0.bottom/0.0.2560.1440@0.0.2560.1440" timestamp="1590161269806" />
-    <state width="1493" height="211" key="GridCell.Tab.0.center" timestamp="1590324867471">
-      <screen x="0" y="0" width="1536" height="864" />
+    <state width="2172" height="410" key="GridCell.Tab.0.bottom/0.0.2560.1440@0.0.2560.1440" timestamp="1590350152930" />
+    <state width="2172" height="410" key="GridCell.Tab.0.center" timestamp="1590350152930">
+      <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state width="1493" height="211" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1590324867471" />
-    <state width="2172" height="410" key="GridCell.Tab.0.center/0.0.2560.1440@0.0.2560.1440" timestamp="1590161269805" />
-    <state width="1493" height="211" key="GridCell.Tab.0.left" timestamp="1590324867470">
-      <screen x="0" y="0" width="1536" height="864" />
+    <state width="2172" height="410" key="GridCell.Tab.0.center/0.0.2560.1440@0.0.2560.1440" timestamp="1590350152930" />
+    <state width="2172" height="410" key="GridCell.Tab.0.left" timestamp="1590350152930">
+      <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state width="1493" height="211" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1590324867470" />
-    <state width="2172" height="410" key="GridCell.Tab.0.left/0.0.2560.1440@0.0.2560.1440" timestamp="1590161269805" />
-    <state width="1493" height="211" key="GridCell.Tab.0.right" timestamp="1590324867471">
-      <screen x="0" y="0" width="1536" height="864" />
+    <state width="2172" height="410" key="GridCell.Tab.0.left/0.0.2560.1440@0.0.2560.1440" timestamp="1590350152930" />
+    <state width="2172" height="410" key="GridCell.Tab.0.right" timestamp="1590350152930">
+      <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state width="1493" height="211" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1590324867471" />
-    <state width="2172" height="410" key="GridCell.Tab.0.right/0.0.2560.1440@0.0.2560.1440" timestamp="1590161269805" />
+    <state width="2172" height="410" key="GridCell.Tab.0.right/0.0.2560.1440@0.0.2560.1440" timestamp="1590350152930" />
     <state x="248" y="126" key="MergeDialog" timestamp="1589112617752">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>

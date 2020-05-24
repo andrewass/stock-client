@@ -3,7 +3,7 @@ import axios from "axios";
 import SymbolList from "./SymbolList";
 import SymbolSearch from "./SymbolSearch";
 
-const TRENDING_STOCK_SYMBOL_URL = "http://localhost:8080/stock/trending-stock-candles?count=10&days=365";
+const TRENDING_STOCK_SYMBOL_URL = "http://localhost:8080/stock/trending-stock-candles?count=10&days=100";
 
 class Stocks extends React.Component {
 

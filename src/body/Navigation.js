@@ -7,9 +7,11 @@ const NavigationBar = styled.nav`
   flex-flow: row nowrap;
   justify-content: space-evenly;
   align-items: center;
-  height: 15vh;
-  background-color: lightskyblue;
+  height: 10vh;
   border-bottom-style: solid;
+  width: 60%;
+  margin-right: 20%;
+  margin-left: 20%;
   
   .navLinks{
     display: flex;
@@ -32,11 +34,11 @@ const NavigationBar = styled.nav`
   .link{
     color:black;
     text-decoration: none;
-    font-size: 2.5vh;
+    font-size: 1.5vh;
   }
   
   .logo{
-    font-size: 7vh;
+    font-size: 3vh;
     font-weight: bold;
   }
 `;

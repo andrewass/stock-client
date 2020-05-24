@@ -6,7 +6,8 @@ const WEEK = 7;
 
 const SearchBlock = styled.div`
   width: 60%;
-  margin: 2% 20%;
+  margin: 0 20%;
+  padding-top: 2%; 
 `;
 
 class SymbolSearch extends React.Component {

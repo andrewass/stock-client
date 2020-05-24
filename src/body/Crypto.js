@@ -3,8 +3,7 @@ import axios from "axios";
 import SymbolSearch from "./SymbolSearch";
 import SymbolList from "./SymbolList";
 
-const TRENDING_CRYPTO_SYMBOL_URL = "http://localhost:8080/crypto/trending-crypto-candles?count=10&days=365";
-
+const TRENDING_CRYPTO_SYMBOL_URL = "http://localhost:8080/crypto/trending-crypto-candles?count=10&days=100";
 
 class Crypto extends React.Component {
 

@@ -7,6 +7,9 @@ import Navigation from "./Navigation";
 import styled from "styled-components";
 
 const BodyBlock = styled.div`
+  width: 60%;
+  margin-right: 20%;
+  margin-left: 20%;
 `;
 
 class Body extends React.Component {
