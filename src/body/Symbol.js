@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from "react-router-dom";
 import styled from "styled-components";
 
 const PriceChange = styled.label`
@@ -9,6 +10,11 @@ const SymbolBlock = styled.div`
   width: 60%;
   margin: 2% 20%;
 `;
+
+const SymbolLink = styled(Link)`
+ text-decoration: none;
+ color: black;
+`
 
 const priceDifference = (currentPrice, previousPrice) => {
     let priceDiff = currentPrice - previousPrice;
@@ -22,7 +28,9 @@ const Symbol = ({symbol, candles}) => {
     let previousPrice = candles[lastCandle].closingPrice
     return (
         <SymbolBlock>
-            <h2><b>{symbol.description} ({symbol.symbol})</b></h2>
+            <SymbolLink className="symbolLink" to={{pathname:"/symboldetails", state : {symbol : symbol}}}>
+                <h2><b>{symbol.description} ({symbol.symbol})</b></h2>
+            </SymbolLink>
             <h4><b>{exchange.exchangeName} ({exchange.code})</b></h4>
             <p>Latest price : {candles[0].closingPrice} {exchange.currency}</p>
             <p>Since last week : {priceDifference(currentPrice, previousPrice)} {exchange.currency}</p>

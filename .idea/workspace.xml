@@ -2,12 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="830cd3e3-9dc7-46a6-8717-854a9af76e5d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/body/SymbolDetails.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/header/Header.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/header/LowerBar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/header/UpperBar.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/body/Body.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/body/Body.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/body/Crypto.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/body/Crypto.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/body/Navigation.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/body/Navigation.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/body/Stocks.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/body/Stocks.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/body/SymbolSearch.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/body/SymbolSearch.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/body/Navigation.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/body/Symbol.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/body/Symbol.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/body/test/Symbol.test.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,8 +40,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -131,11 +137,13 @@
       <workItem from="1590149379673" duration="5609000" />
       <workItem from="1590277076536" duration="233000" />
       <workItem from="1590277331782" duration="6815000" />
+      <workItem from="1590431306167" duration="5501000" />
+      <workItem from="1590509365216" duration="6464000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="fff" />
@@ -151,26 +159,26 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="495" y="132" key="#npm_start/0.0.1536.864@0.0.1536.864" timestamp="1588449610450" />
-    <state width="2172" height="410" key="GridCell.Tab.0.bottom" timestamp="1590350152930">
+    <state width="2172" height="410" key="GridCell.Tab.0.bottom" timestamp="1590527332538">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state width="1493" height="211" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1590324867471" />
-    <state width="2172" height="410" key="GridCell.Tab.0.bottom/0.0.2560.1440@0.0.2560.1440" timestamp="1590350152930" />
-    <state width="2172" height="410" key="GridCell.Tab.0.center" timestamp="1590350152930">
+    <state width="2172" height="410" key="GridCell.Tab.0.bottom/0.0.2560.1440@0.0.2560.1440" timestamp="1590527332538" />
+    <state width="2172" height="410" key="GridCell.Tab.0.center" timestamp="1590527332538">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state width="1493" height="211" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1590324867471" />
-    <state width="2172" height="410" key="GridCell.Tab.0.center/0.0.2560.1440@0.0.2560.1440" timestamp="1590350152930" />
-    <state width="2172" height="410" key="GridCell.Tab.0.left" timestamp="1590350152930">
+    <state width="2172" height="410" key="GridCell.Tab.0.center/0.0.2560.1440@0.0.2560.1440" timestamp="1590527332538" />
+    <state width="2172" height="410" key="GridCell.Tab.0.left" timestamp="1590527332538">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state width="1493" height="211" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1590324867470" />
-    <state width="2172" height="410" key="GridCell.Tab.0.left/0.0.2560.1440@0.0.2560.1440" timestamp="1590350152930" />
-    <state width="2172" height="410" key="GridCell.Tab.0.right" timestamp="1590350152930">
+    <state width="2172" height="410" key="GridCell.Tab.0.left/0.0.2560.1440@0.0.2560.1440" timestamp="1590527332538" />
+    <state width="2172" height="410" key="GridCell.Tab.0.right" timestamp="1590527332538">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
     <state width="1493" height="211" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1590324867471" />
-    <state width="2172" height="410" key="GridCell.Tab.0.right/0.0.2560.1440@0.0.2560.1440" timestamp="1590350152930" />
+    <state width="2172" height="410" key="GridCell.Tab.0.right/0.0.2560.1440@0.0.2560.1440" timestamp="1590527332538" />
     <state x="248" y="126" key="MergeDialog" timestamp="1589112617752">
       <screen x="0" y="0" width="2560" height="1440" />
     </state>
