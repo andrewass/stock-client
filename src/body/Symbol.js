@@ -28,7 +28,8 @@ const Symbol = ({symbol, candles}) => {
     let previousPrice = candles[lastCandle].closingPrice
     return (
         <SymbolBlock>
-            <SymbolLink className="symbolLink" to={{pathname:"/symboldetails", state : {symbol : symbol}}}>
+            <SymbolLink className="symbolLink"
+                        to={{pathname:"/symboldetails", state : {candles : candles, symbol : symbol}}}>
                 <h2><b>{symbol.description} ({symbol.symbol})</b></h2>
             </SymbolLink>
             <h4><b>{exchange.exchangeName} ({exchange.code})</b></h4>
